@@ -1,0 +1,33 @@
+alpha = 0.7
+delta = 1.0
+experiment_kappas = [0.5, 0.8, 1.0, 1.25, 1.5, 2.0, 3.0, 4.5]
+generated_at = "2026-09-24T18:23:32.151"
+julia_version = "1.12.6"
+lambdas = [0.01, 1.0]
+seed = 20260912
+sigma = 0.5
+tau = 1.0
+theory_kappas = [0.5, 0.7, 0.9, 1.1, 1.3, 1.5, 1.7, 1.9, 2.1, 2.3, 2.5, 2.7, 2.9, 3.1, 3.3, 3.5, 3.7, 3.9, 4.1, 4.3, 4.5]
+threads = 16
+
+[experiment]
+coordinate_warmup_sweeps = 20
+dimension = 256
+duality_gap_tolerance = 1.0e-8
+lbfgs_iterations = 2500
+trials = 8
+trust_region_iterations = 120
+
+[theory]
+bisection_steps = 16
+check_window = 15
+grid_points = 71
+grid_radius = 7.0
+grid_scale = 0.25
+max_iterations = 160
+mean_explicit_points = 8.0
+min_iterations = 60
+population_size = 1024
+relative_tolerance = 0.005
+response_samples = 512
+response_step = 0.01
